@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/*글자자동조절방지*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+img,
+fieldset,
+video {
+  border: 0;
+  vertical-align: top;
+}
+
+input,
+textarea,
+select {
+  vertical-align: middle;
+  resize: none;
+  position: relative;
+  border-radius: 0;
+}
+
+button {
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+caption,
+legend,
+.hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1.5;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+/* Float으로 인한 영역 깨짐(Height: 0)을 방지 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 말줄임 효과(한줄 효과) */
+/* {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+
+/* IR (Image Replacement) 기법 */
+/* 보이지 않게 하면 콘텐츠 영역 또한 사라집니다 */
+/* {
+  overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;
+} */
+
+/* 미디어쿼리 적용 방법 */
+body {
+  background: #b71c1c;
+  color: #fff;
+}
+h1::before {
+  content: "1. ";
+}
+h1::after {
+  content: " - 기본";
+}
+/* 화면 너비가 0 ~ 1280px: 피시 */
+@media (max-width: 1280px) {
+  body {
+    background: #880e4f;
+  }
+  h1::before {
+    content: "2. ";
+  }
+  h1::after {
+    content: " - 1025px ~ 1280px";
+  }
+}
+/* 화면 너비가 0 ~ 1024px: 데스크탑 */
+@media (max-width: 1024px) {
+  body {
+    background: #4a148c;
+  }
+  h1::before {
+    content: "3. ";
+  }
+  h1::after {
+    content: " - 968px ~ 1024px";
+  }
+}
+/* 화면 너비가 0 ~ 960px: 노트북 */
+@media (max-width: 960px) {
+  body {
+    background: #311b92;
+  }
+  h1::before {
+    content: "4. ";
+  }
+  h1::after {
+    content: " - 769px ~ 960px";
+  }
+}
+/* 화면 너비가 0 ~ 768px: 타블렛 */
+@media (max-width: 768px) {
+  body {
+    background: #4a148a;
+  }
+  h1::before {
+    content: "5. ";
+  }
+  h1::after {
+    content: " - 577px ~ 768px";
+  }
+}
+/* 화면 너비가 0 ~ 576px: 모바일 */
+@media (max-width: 576px) {
+  body {
+    background: #004d40;
+  }
+  h1::before {
+    content: "6. ";
+  }
+  h1::after {
+    content: " - 0 ~ 576px";
+  }
+}
