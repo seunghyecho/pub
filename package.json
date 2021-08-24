@@ -1,0 +1,26 @@
+{
+  "name": "pub",
+  "version": "1.0.0",
+  "description": "My Publishing Setting Files for Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/seunghyecho/pub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seunghyecho/pub/issues"
+  },
+  "homepage": "https://github.com/seunghyecho/pub#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "gulp-uglify": "^3.0.2"
+  }
+}
