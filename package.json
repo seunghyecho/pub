@@ -17,8 +17,14 @@
   },
   "homepage": "https://github.com/seunghyecho/pub#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-css": "^1.2.4",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-minify-html": "^1.0.6"
   }
 }

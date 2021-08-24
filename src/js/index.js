@@ -1,2 +1,2 @@
-var sayHelloFunc = require("./sayHello");
-console.log(sayHelloFunc("J.K!"));
+var sayHelloFunc = require("./custom");
+console.log(sayHelloFunc("J.K!!!!!"));
