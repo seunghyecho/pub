@@ -18,9 +18,7 @@
   "homepage": "https://github.com/seunghyecho/pub#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1"
-  },
-  "dependencies": {
+    "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2"
   }
 }

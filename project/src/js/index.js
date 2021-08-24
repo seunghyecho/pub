@@ -1,3 +1,2 @@
-jQuery(document).ready(function(){
-    console.log('hihi')
-});
+var sayHelloFunc = require("./sayHello");
+console.log(sayHelloFunc("J.K!"));
